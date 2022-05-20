@@ -1,0 +1,117 @@
+.title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: -9px;
+}
+.title span {
+  color: #FF6428;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: -9px;
+  }
+}
+.main__browse {
+  margin-top: 240px;
+}
+.main__browse .browse__container .columns__contant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main__browse .browse__container .columns__contant .column__left {
+  flex: 0 1 433px;
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .main__browse .browse__container .columns__contant .column__left {
+    flex: 1 1 100%;
+  }
+}
+.main__browse .browse__container .columns__contant .column__left .left__title {
+  text-align: center;
+  font-size: 44px;
+  line-height: -9px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: -19px;
+  text-align: left;
+  margin-bottom: 70px;
+}
+.main__browse .browse__container .columns__contant .column__left .left__title span {
+  color: #FF6428;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .main__browse .browse__container .columns__contant .column__left .left__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: -9px;
+  }
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .main__browse .browse__container .columns__contant .column__left .left__title {
+    text-align: center;
+  }
+}
+.main__browse .browse__container .columns__contant .column__left .left__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .main__browse .browse__container .columns__contant .column__left .left__button {
+    justify-content: center;
+  }
+  .main__browse .browse__container .columns__contant .column__left .left__button > *:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.main__browse .browse__container .columns__contant .column__right {
+  display: flex;
+  flex: 0 1 50%;
+  max-height: 533px;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .main__browse .browse__container .columns__contant .column__right {
+    flex: 0 1 50%;
+    margin: 0 auto;
+    background-color: #FF6428;
+    border-radius: 80px;
+    margin-top: 15px;
+  }
+}
+.main__browse .browse__container .columns__contant .column__right::after {
+  content: url("../img/main/browse/Ellipse\ 6.png");
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .main__browse .browse__container .columns__contant .column__right::after {
+    display: none;
+  }
+}
+.main__browse .browse__container .columns__contant .column__right .right__img-left {
+  flex: 1 1 50%;
+  position: relative;
+  z-index: 2;
+}
+.main__browse .browse__container .columns__contant .column__right .right__img-left img {
+  width: 100%;
+}
+.main__browse .browse__container .columns__contant .column__right .right__img-right {
+  flex: 1 1 50%;
+  position: relative;
+  z-index: 2;
+}
+.main__browse .browse__container .columns__contant .column__right .right__img-right img {
+  width: 100%;
+}

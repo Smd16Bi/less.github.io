@@ -1,0 +1,52 @@
+@import "var.less";
+
+.main__categories {
+   .categories__container {
+      .categories__title {
+         .title();
+         margin-bottom: 80px;
+      }
+
+      .categories__content {
+         display: flex;
+         flex-direction: row;
+         align-items: stretch;
+         justify-content: center;
+         flex-wrap: wrap;
+         
+         &>*:not(:last-child) {
+            margin-right: 65px;
+            .ms(0px, 1120px, {
+               margin-right: 15px;
+            });
+            .ms(0px, 1000px, {
+               margin-right: 0px;
+            });
+         };
+
+         .item__body {
+            flex: 1 1 calc(100% / 4 - 65px * 3 / 4);
+            position: relative;
+            z-index: 1;
+            .ms(0px, 1000px, {
+               flex: 1 1 50%;
+               display: flex;
+               justify-content: center;
+            });
+            .body-img {}
+         
+            .body-text {
+               position: absolute;
+               top: 80%;
+               left: 50%;
+               transform: translate(-50%, 0);
+               z-index: 2;
+               color: #fff;
+               .font(20px, 600, 30px);
+            }
+         }
+      }
+   }
+}
+
+

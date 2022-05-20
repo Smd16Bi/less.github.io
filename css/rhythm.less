@@ -1,0 +1,68 @@
+@import "var.less";
+
+
+.main__rhythm {
+   background: #121212;
+   margin-top: 180px;
+   padding: 93px 0;
+
+   .rhythm__container {
+      .rhythm__title {
+         .title();
+         color: #fff;
+         margin-bottom: 75px;
+      }
+
+      .rhythm__plus {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         .plus__item {
+            flex: 1 1 calc(100% / 3);
+            text-align: center;
+            .ms(0px, 750px, {
+               flex: 1 1 calc(100% / 2);
+
+               &:nth-child(3) {
+                  margin-top: 40px;
+                  flex: 1 1 100%;
+               }
+            });
+
+            .ms(0px, 480px, {
+               flex: 1 1 100%;
+               &:nth-child(2) {
+                  margin: 40px 0px;
+               }
+
+               &:nth-child(3) {
+                  margin-top: 0px;
+               }
+            });
+
+            .plus__item-img {
+               height: 72px;
+               width: 72px;
+               border-radius: 20px;
+               background: #262626;
+               line-height: 92px;
+               margin: 0 auto;
+            }
+
+            .plus__item-title {
+               color: #FFFFFF;
+               .font(18px, 600, 27px);
+               margin: 40px 0 14px 0;
+            }
+
+            .plus__item-subTitle {
+               margin: 0 auto;
+               width: 230px;
+               color: #666666;
+               .font(14px, 400, 21px);
+            }
+         }
+      }
+   }
+}

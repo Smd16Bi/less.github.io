@@ -1,0 +1,71 @@
+.title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: -9px;
+}
+.title span {
+  color: #FF6428;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: -9px;
+  }
+}
+.main__brands {
+  margin-top: 220px;
+}
+.main__brands .brands__container .brands__title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: -9px;
+  margin-bottom: 80px;
+}
+.main__brands .brands__container .brands__title span {
+  color: #FF6428;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .main__brands .brands__container .brands__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: -9px;
+  }
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .main__brands .brands__container .brands_lines {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.main__brands .brands__container .brands_lines > *:not(:last-child) {
+  margin-bottom: 105px;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .main__brands .brands__container .brands_lines > *:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+.main__brands .brands__container .brands_lines .lines__brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .main__brands .brands__container .brands_lines .lines__brand {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__brands .brands__container .brands_lines .lines__brand > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.main__brands .brands__container .brands_lines .lines__brand .brand-img {
+  width: 140px;
+  height: 50px;
+}

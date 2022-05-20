@@ -1,0 +1,286 @@
+.title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: -9px;
+}
+.title span {
+  color: #FF6428;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: -9px;
+  }
+}
+.footer {
+  background: #EEEEEE;
+  padding: 80px 0 43px 0;
+  margin-top: 120px;
+}
+.footer .footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .footer__container .elem__logo {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__logo {
+    flex: 1 1 100%;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+.footer .footer__container .elem__logo .elem__logo-name {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: -8px;
+  color: #121212;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__logo .elem__logo-name::before {
+  content: url("../img/footer/Butterfly.png");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__logo .elem__logo-email {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  margin: 24px 0 12px 0;
+}
+.footer .footer__container .elem__logo .elem__logo-email::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__logo .elem__logo-location {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__logo .elem__logo-location::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__pages {
+  flex: 0 0 auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__pages {
+    flex: 1 1 100%;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+.footer .footer__container .elem__pages .elem__logo-name {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: -8px;
+  color: #121212;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__pages .elem__logo-name::before {
+  content: url("../img/footer/Butterfly.png");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__pages .elem__logo-email {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  margin: 24px 0 12px 0;
+}
+.footer .footer__container .elem__pages .elem__logo-email::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__pages .elem__logo-location {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__pages .elem__logo-location::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__pages {
+    flex: 0 1 50%;
+  }
+}
+.footer .footer__container .elem__pages .elem__pages-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: -9px;
+  color: #121212;
+  margin-bottom: 20px;
+}
+.footer .footer__container .elem__pages .elem__pages-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  color: #666666;
+}
+.footer .footer__container .elem__pages .elem__pages-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.footer .footer__container .elem__product {
+  flex: 0 0 auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__product {
+    flex: 1 1 100%;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+.footer .footer__container .elem__product .elem__logo-name {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: -8px;
+  color: #121212;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__product .elem__logo-name::before {
+  content: url("../img/footer/Butterfly.png");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__product .elem__logo-email {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  margin: 24px 0 12px 0;
+}
+.footer .footer__container .elem__product .elem__logo-email::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__product .elem__logo-location {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__product .elem__logo-location::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__product {
+    flex: 0 1 50%;
+    align-items: center;
+  }
+}
+.footer .footer__container .elem__product .elem__product-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: -9px;
+  color: #121212;
+  margin-bottom: 20px;
+}
+.footer .footer__container .elem__product .elem__product-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  color: #666666;
+}
+.footer .footer__container .elem__product .elem__product-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.footer .footer__container .elem__foolow {
+  flex: 0 0 auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__foolow {
+    flex: 1 1 100%;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+.footer .footer__container .elem__foolow .elem__logo-name {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: -8px;
+  color: #121212;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__foolow .elem__logo-name::before {
+  content: url("../img/footer/Butterfly.png");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__foolow .elem__logo-email {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  margin: 24px 0 12px 0;
+}
+.footer .footer__container .elem__foolow .elem__logo-email::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+.footer .footer__container .elem__foolow .elem__logo-location {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -10px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .elem__foolow .elem__logo-location::before {
+  content: url("../img/footer/sms.svg");
+  margin-right: 24px;
+}
+@media (min-width: 0px) and (max-width: 630px) {
+  .footer .footer__container .elem__foolow {
+    flex: 1 1 100%;
+    align-items: center;
+  }
+}
+.footer .footer__container .elem__foolow .elem__foolow-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: -9px;
+  color: #121212;
+  margin-bottom: 20px;
+}

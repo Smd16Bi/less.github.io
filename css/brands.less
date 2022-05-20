@@ -1,0 +1,48 @@
+@import "var.less";
+
+.main__brands {
+   margin-top: 220px;
+
+   .brands__container {
+      .brands__title {
+         .title();
+         margin-bottom: 80px;
+      }
+      .brands_lines {
+         .ms(0px, 650px, {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+         });
+         &>*:not(:last-child) {
+            margin-bottom: 105px;
+            .ms(0px, 650px, {
+               margin-bottom: 0px;
+
+            });
+         }
+
+         .lines__brand {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .ms(0px, 650px, {
+               display: flex;
+               flex-direction: column;
+               &>*:not(:last-child) {
+                  margin-bottom: 15px;
+               }
+            });
+
+
+
+            .brand-img {
+               width: 140px;
+               height: 50px;
+            }
+         }
+      }
+   }
+}

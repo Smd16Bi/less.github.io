@@ -1,0 +1,89 @@
+@import "var.less";
+
+
+.main__store {
+   margin-top: 160px;
+   .store__container {
+      .store__title {
+         .title();
+         margin-bottom: 120px;
+      }
+      .store__lines {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         margin-bottom: 180px;
+         .store__line-title {
+            .font(20px, 600, 30px);
+            color: #121212;
+            margin-bottom: 32px;
+         }
+         .store__line-new {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+            &>*:not(:last-child) {
+               margin-right: 54px;
+            }
+            // .ms(0px, 750px, {
+
+            // });
+            
+            .item__body {
+               flex: 1 1 calc(100% / 3 - 54px *  2 / 3);
+               .ms(0px, 750px, {
+                  flex: 1 1 calc(100% / 2 - 54px *  1 / 2);
+                  &:nth-child(3) {
+                     display: none;
+                  };
+               });
+               .ms(0px, 550px, {
+                  flex: 1 1 100%;
+                  &:nth-child(2) {
+                     display: none;
+                  };
+               });
+
+               .item__body-img {
+                  img {
+                     max-width: 100%;
+                  }
+               }
+               .item__body-title {
+                  margin: 40px 0 10px 0;
+                  .font(16px, 500, 24px);
+                  color: #121212;
+               }
+               .item__body-subtitle {
+                  .font(14px, 400, 21px);
+                  color: #666666;
+               }
+            }
+            .showAll {
+               display: none;
+               .ms(0px, 750px, {
+                  display: block;
+                  flex: 100%;
+                  text-align: center;
+                  margin: 25px 0;
+               })
+            }
+         }
+         .store__line-top {
+            .store__line-new();
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+

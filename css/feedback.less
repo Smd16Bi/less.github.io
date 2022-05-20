@@ -1,0 +1,92 @@
+@import "var.less";
+
+
+.main__feedback {
+   margin-top: 240px;
+   .feedback__container {
+      .feedback__title {
+         .title();
+         margin-bottom: 138px;
+         .ms(0px, 600px, {
+            margin-bottom: 38px;
+
+         });
+      }
+      .feedback__content {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: space-between;
+
+         .content__img {
+            flex: 1 1 50%;
+            .ms(0px, 600px, {
+               flex: 0 1 50%;
+               text-align: center;
+            });
+
+            img {
+               max-width: 100%;
+               .ms(0px, 950px, {
+                  max-width: 90%;
+                  text-align: center;
+               });
+               .ms(0px, 487px, {
+                  margin-bottom: 30px;
+               });
+               
+            }
+         }
+
+         .content__feed {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .ms(0px, 600px, {
+               flex: 0 1 100%;
+               flex-direction: column-reverse;
+               align-items: flex-end;
+               margin-top: -30px;
+            });
+
+            .ms(0px, 487px, {
+               align-items: flex-start;
+            });
+
+            .feed__feedback {
+               max-width: 524px;
+               max-height: 152px;
+               .font(24px, 400px, 38px);
+               color: #666666;
+               .ms(0px, 950px, {
+                  .font(18px, 400px, 38px);
+               })
+            }
+
+            .feed__name {
+               .font(24px, 600, 38px);
+               color: #000000;
+               margin: 56px 0 8px 0;
+            }
+
+            .feed__position {
+               color: #868686;
+               .font(18px, 500, 29px);
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+
+               &::after {
+                  content: "";
+                  width: 12px;
+                  height: 24px;
+                  background: #FF6428;
+                  margin-left: 50px;
+                  border-radius: 20px;
+               }
+            }
+         }
+      }
+   }
+}

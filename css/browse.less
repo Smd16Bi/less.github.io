@@ -1,0 +1,97 @@
+@import "var.less";
+
+.main__browse {
+   margin-top: 240px;
+   .browse__container {
+      .columns__contant {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         .column__left {
+            flex: 0 1 433px;
+            .ms(0px,1000px, {
+               flex: 1 1 100%;
+            });
+            .left__title {
+               .title();
+               .font(48px, 600, 67px);
+               text-align: left;
+               margin-bottom: 70px;
+               .ms(0px,1000px, {
+                  text-align: center
+               });
+            }
+            .left__button {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               .ms(0px,1000px, {
+                  justify-content: center;
+                  &>*:not(:last-child) {
+                     margin-right: 30px;
+                  }
+               });
+            }
+         }
+
+         .column__right {
+            display: flex;
+            flex: 0 1 50%;
+            max-height: 533px;
+            position: relative;
+            .ms(0px,1000px, {
+               flex: 0 1 50%;
+               margin: 0 auto;
+               background-color: #FF6428;
+               border-radius: 80px;
+               margin-top: 15px;
+            });
+            
+            &::after {
+               content: url("../img/main/browse/Ellipse\ 6.png");
+               max-width: 100%;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+               z-index: 1;
+               .ms(0px, 1000px, {
+                  display: none;
+               })
+            }
+
+            .right__img-left {
+               flex: 1 1 50%;
+               position: relative;
+               z-index: 2;
+               img {
+                  width: 100%;
+               }
+            }
+            .right__img-right {
+               flex: 1 1 50%;
+               position: relative;
+               z-index: 2;
+               img {
+                  width: 100%;
+               }
+            }
+         }
+         
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+

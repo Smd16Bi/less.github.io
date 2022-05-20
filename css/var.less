@@ -1,0 +1,24 @@
+.font(@fs,@fw,@lh) {
+   font-size: @fs;
+   font-weight: @fw;
+   line-height: @fs - @lh;
+}
+
+.ms(@min,@max,@code) {
+   @media (min-width: @min) and (max-width: @max) {
+      @code();
+   }
+}
+
+.title {
+   text-align: center;
+   .font(44px, 600, 53px);
+   span {
+      color: #FF6428;
+   }
+
+   .ms(0px, 650px, {
+      .font(24px, 600, 33px);
+   })
+}
+

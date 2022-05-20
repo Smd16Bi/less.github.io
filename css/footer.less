@@ -1,0 +1,126 @@
+@import "var.less";
+
+
+.footer {
+   background: #EEEEEE;
+   padding: 80px 0 43px 0;
+   margin-top: 120px;
+
+   .footer__container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .elem__logo {
+         flex: 1 1 auto;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         .ms(0px, 630px, {
+            flex: 1 1 100%;
+            align-items: center;
+            margin-bottom: 40px;
+         });
+         .elem__logo-name {
+            .font(40px, 600, 48);
+            color: #121212;
+            display: flex;
+            align-items: center;
+            &::before {
+               content: url("../img/footer/Butterfly.png");
+               margin-right: 24px;
+            }
+         }
+
+         .elem__logo-email {
+            .font(16px, 400, 26px);
+            display: flex;
+            align-items: center;
+            color: #666666;
+            margin: 24px 0 12px 0;
+
+            &::before {
+               content: url("../img/footer/sms.svg");
+               margin-right: 24px;
+            }
+         }
+
+         .elem__logo-location {
+            .font(16px, 400, 26px);
+            color: #666666;
+            display: flex;
+            align-items: center;
+
+
+            &::before {
+               content: url("../img/footer/sms.svg");
+               margin-right: 24px;
+            }
+         }
+      }
+
+      .elem__pages {
+         flex: 0 0 auto;
+         .elem__logo();
+         .ms(0px, 630px, {
+            flex: 0 1 50%;
+         });
+
+         .elem__pages-name {
+            .elem__product > .elem__product-name();
+         }
+
+         .elem__pages-item {
+            .elem__product > .elem__product-item();
+
+
+         }
+      }
+
+      .elem__product {
+         flex: 0 0 auto;
+         .elem__logo();
+         .ms(0px, 630px, {
+            flex: 0 1 50%;
+            align-items: center;
+         });
+
+         .elem__product-name {
+            .font(18px,600,27px);
+            color: #121212;
+            margin-bottom: 20px;
+         }
+
+         .elem__product-item {
+            .font(16px, 400, 26px);
+            color: #666666;
+            &:not(:last-child) {
+               margin-bottom: 32px;
+            };
+         }
+      }
+
+      .elem__foolow {
+         flex: 0 0 auto;
+         .elem__logo();
+         .ms(0px, 630px, {
+            flex: 1 1 100%;
+            align-items: center;
+         });
+
+
+         .elem__foolow-name {
+            .elem__product > .elem__product-name();
+         }
+
+         .elem__foolow-social {
+            .social-facebook {}
+
+            .social-twiter {}
+
+            .social-instagram {}
+         }
+      }
+   }
+}

@@ -1,0 +1,101 @@
+@import "var.less";
+
+.nav {
+   height: 150px;
+   display: flex;
+   align-items: center;
+   .ms(0px,500px,{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-top: 25px;
+   });
+   .nav__logo {
+      position: relative;
+      z-index: 2;
+      .font(24px, 600, 28px);
+      display: flex;
+      align-items: center;
+      margin-right: 133px;
+      
+      .ms(0px,1264px,{
+         margin-right: 50px;
+      });
+
+      &:before {
+         content: url("../img/header/logo-header.svg");
+         margin-right: 15px;
+      }
+
+   }
+   .nav__navbar {
+      position: relative;
+      z-index: 2;
+      flex: 1 1 auto;
+      margin-right: 93px;
+      .ms(0px,500px,{
+         align-items: center;
+         margin-right: 0;
+         margin-top: 25px;
+      });
+      .navbar{
+         .navbar__list{
+            display: flex;
+            .ms(0px,800px,{
+               display: flex;
+               flex-direction: column;
+               &>*:not(:last-child) {
+                  margin-bottom: 15px;
+               }
+            });
+            
+            
+            &>*:not(:last-child) {
+               margin-right: 57px;
+               .ms(0px,1100px,{
+                  margin-right: 25px;
+               });
+               
+            }
+            .navbar__item{
+               .navbar__link{
+                  .font(16px,500,24px);
+                  color: #12121266;
+                  text-decoration: none;
+                  .ms(0px, 500px, {
+                     .font(30px,500,44px);
+                     color: #000;
+                  });
+               }
+            }
+         }
+      }
+   }
+   .nav__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 672px;
+      .ms(0px,1264px,{
+         width: 500px;
+      });
+      .ms(0px,1100px,{
+         width: 350px;
+      });
+      .ms(0px,500px,{
+         width: 100%;
+      });
+   
+      img {
+         width: 100%;
+         object-fit: cover;
+         object-position: 50% 50%;
+         .ms(0px, 500px, {
+            opacity: 0.7;
+         });
+
+      }  
+      
+   }
+}

@@ -1,0 +1,76 @@
+.title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: -9px;
+}
+.title span {
+  color: #FF6428;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: -9px;
+  }
+}
+.main__onlineApp {
+  margin-top: 83px;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 0) and (max-width: 700px) {
+  .main__onlineApp {
+    margin-top: 160px;
+  }
+}
+@media (min-width: 0) and (max-width: 400px) {
+  .main__onlineApp {
+    margin-top: 190px;
+  }
+}
+.main__onlineApp .onlineApp__container .onlineApp__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 469px;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: -22px;
+  color: #121212;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-title span {
+  color: #FF6428;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-subtitle {
+  margin: 16px 0 33px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: -8px;
+  color: #666666;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-btn {
+  display: flex;
+  align-items: center;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-btn::after {
+  content: url("../img/main/onlineApp/group.svg");
+  margin-left: 40px;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-btn a {
+  padding: 15px 37px;
+  text-align: center;
+  background-color: #FF6428;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: -8px;
+  transition: all 0.5s;
+  color: #ffffff;
+  text-decoration: none;
+}
+.main__onlineApp .onlineApp__container .onlineApp__body .appBody-btn a:hover {
+  background-color: #a72f00;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+@import "var.less";
+
+
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   line-height: 1;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.header{
+   position: relative;
+}
+
+@import "header.less";
+
+.main {
+   flex: 1 1 auto;
+}
+/* OnlineApp*/ 
+@import "onlineApp.less";
+/* OnlineApp*/ 
+
+/* store*/ 
+@import "store.less";
+/* store*/ 
+
+/* categories*/ 
+@import "categories.less";
+/* categories*/ 
+
+/* brands*/ 
+@import "brands.less";
+/* brands*/ 
+
+/* rhythm*/ 
+@import "rhythm.less";
+/* rhythm*/ 
+
+/* feedback */ 
+@import "feedback.less";
+/* feedback */ 
+
+/* browse */
+@import "browse.less";
+/* browse */
+
+.footer{}
+
+@import "footer.less";
+
+[class*="container"] {
+   margin: 0 auto;
+   max-width: 1180px;
+   padding: 0 10px;
+}
